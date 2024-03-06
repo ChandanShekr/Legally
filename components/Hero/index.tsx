@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <section>
-        <div className="custom-screen mt-0 mb-10 py-28 pb-0 text-gray-600">
+        <div className="custom-screen mt-0 mb-10 py-28 pb-0 bg-#202122 text-gray-600">
           {/* <LampDemo /> */}
           <div className="space-y-5 max-w-4xl mx-auto text-center">
             <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
