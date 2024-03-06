@@ -14,7 +14,7 @@ export const HoverEffect = ({
     return (
         <>
             <h2 className="text-3xl mt-6 font-semibold text-center mb-5 text-gray-200">
-                Our Services
+                Features
             </h2>
             <div
                 className={cn(
