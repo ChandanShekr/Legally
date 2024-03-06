@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,3 +68,14 @@
   }
 }
  
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.carme {
+  font-family: 'Carme', sans-serif;
+}

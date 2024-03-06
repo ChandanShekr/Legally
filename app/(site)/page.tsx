@@ -26,18 +26,20 @@ export default function Home() {
       <LampDemo />
       {/* <Hero /> */}
       {/* <Brands /> */}
+      <div className="lato"> 
       <Feature />
       {/* <About /> */}
       {/* <FeaturesTab /> */}
       {/* <FunFact /> */}
-      {/* <Integration /> */}
+      <Integration />
       <CTA />
       {/* <FAQ /> */}
-      <Testimonial />
+      <Testimonial  />
       {/* <Pricing /> */}
       <Contact />
       <Footer />
       {/* <Blog /> */}
+      </div>
     </main>
   );
 }
