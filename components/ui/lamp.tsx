@@ -1,12 +1,25 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 
 export function LampDemo() {
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setShowButton(true);
+        }, 1100);
+
+        return () => {
+            clearTimeout(timeoutId);
+            setShowButton(false);
+        };
+    }, []);
+
     return (
         <LampContainer>
-            <motion.h1
+            <motion.div
                 initial={{ opacity: 0.5, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -14,22 +27,22 @@ export function LampDemo() {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className="text-center text-4xl -mt-35 md:-mt-35 sm:-mt-25 font-medium tracking-tight text-gray-800 md:text-7xl"
+                className="flex flex-col items-center"
             >
-                Lumiora: Simplifying <br></br>Automation for You
-            </motion.h1>
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{
-                    opacity: 1,
-                    transition: {
-                        delay: 1.1,
-                    },
-                }}
-            >
-                <Button className="bg-black text-white hover:bg-gray-800 mt-5">
-                    Get in touch
-                </Button>
+                <h1 className="text-center text-4xl -mt-35 md:-mt-35 sm:-mt-25 font-medium tracking-tight text-gray-800 md:text-7xl">
+                    Lumiora: Simplifying <br></br>Automation for You
+                </h1>
+                {showButton && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                    >
+                        <Button className="bg-black text-white hover:bg-gray-800 mt-5">
+                            Get in touch
+                        </Button>
+                    </motion.div>
+                )}
             </motion.div>
         </LampContainer>
     );
