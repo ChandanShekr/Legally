@@ -14,7 +14,7 @@ export function LampDemo() {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className="text-center text-4xl -mt-35 md:-mt-40 sm:-mt-30 font-medium tracking-tight text-gray-800 md:text-7xl"
+                className="text-center text-4xl -mt-35 md:-mt-35 sm:-mt-25 font-medium tracking-tight text-gray-800 md:text-7xl"
             >
                 Lumiora: Simplifying <br></br>Automation for You
             </motion.h1>
