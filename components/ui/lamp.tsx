@@ -18,6 +18,19 @@ export function LampDemo() {
             >
                 Lumiora: Simplifying <br></br>Automation for You
             </motion.h1>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                    opacity: 1,
+                    transition: {
+                        delay: 1.1,
+                    },
+                }}
+            >
+                <Button className="bg-black text-white hover:bg-gray-800 mt-5">
+                    Get in touch
+                </Button>
+            </motion.div>
         </LampContainer>
     );
 }
@@ -30,14 +43,14 @@ export const LampContainer = ({
     className?: string;
 }) => {
     return (
-        <>        
-        <div
-            className={cn(
-                "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-100 w-full rounded-md z-0",
-                className
-            )}
-        >
-            <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 "></div>
+        <>
+            <div
+                className={cn(
+                    "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-100 w-full rounded-md z-0",
+                    className
+                )}
+            >
+                <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 "></div>
                 <motion.div
                     initial={{ opacity: 0.5, width: "15rem" }}
                     whileInView={{ opacity: 1, width: "30rem" }}
@@ -46,7 +59,6 @@ export const LampContainer = ({
                         duration: 0.8,
                         ease: "easeInOut",
                     }}
-
                     style={{
                         backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
                     }}
@@ -101,7 +113,30 @@ export const LampContainer = ({
             <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
                 {children}
             </div>
-            </>
+        </>
+    );
+};
 
+export const Button = ({
+    children,
+    className,
+    ...props
+}: {
+    children: React.ReactNode;
+    className?: string;
+    [key: string]: any;
+}) => {
+    return (
+        <a href="https://cal.com/lumiora">
+            <button
+                className={cn(
+                    "inline-flex items-center p-4 justify-center rounded-md text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
+                    className
+                )}
+                {...props}
+            >
+                {children}
+            </button>
+        </a>
     );
 };
