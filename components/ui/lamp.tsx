@@ -143,7 +143,7 @@ export const Button = ({
         <a href="https://cal.com/lumiora">
             <button
                 className={cn(
-                    "inline-flex items-center p-10 justify-center rounded-md text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
+                    "inline-flex items-center p-4 justify-center rounded-md text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
                     className
                 )}
                 {...props}
