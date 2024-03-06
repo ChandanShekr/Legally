@@ -5,10 +5,11 @@ import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+import { Inter,Oswald,Carme } from "next/font/google";
 import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
-
+const oswald = Oswald({ subsets: ["latin"] });
+const carme = Carme({ weight: "400", subsets: ["latin"] });
 import ToasterContext from "../context/ToastContext";
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
+      <body className={`dark:bg-black ${carme.className}`}>
         <ThemeProvider
           enableSystem={false}
           attribute="class"
