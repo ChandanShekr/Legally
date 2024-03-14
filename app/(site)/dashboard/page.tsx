@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function dashboard() {
+
+function Dashboard() {
   return (
-    <div>dashboard</div>
-  )
+    <div className="dashboard-container">
+      <h1>Welcome to the Dashboard</h1>
+      <div className="dashboard-content">
+        {/* Add your dashboard components and content here */}
+      </div>
+    </div>
+  );
 }
 
-export default dashboard
+export default Dashboard;
