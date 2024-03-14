@@ -29,8 +29,8 @@ export function LampDemo() {
                 }}
                 className="flex flex-col items-center"
             >
-                <h1 className="text-center text-4xl -mt-30 md:-mt-30 sm:-mt-20 font-medium tracking-tight text-gray-200 md:text-7xl">
-                    Lumiora: Simplifying <br></br>Automation for You
+                <h1 className="text-center text-lg md:text-2xl -mt-30 md:-mt-30 sm:-mt-20 font-small tracking-tight text-gray-200 md:text-5xl">
+                    Legally: Your Legal Companion, <br></br>Always Ready.
                 </h1>
                 {showButton && (
                     <motion.div
@@ -140,7 +140,7 @@ export const Button = ({
     [key: string]: any;
 }) => {
     return (
-        <a href="https://cal.com/lumiora">
+        <a href="https://cal.com/legally" target="_blank" rel="noopener noreferrer">
             <button
                 className={cn(
                     "inline-flex items-center p-4 justify-center rounded-md text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",

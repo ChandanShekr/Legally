@@ -11,7 +11,7 @@ export function Feature() {
 
 export const automationServices = [
   {
-    title: "Error-Free Data Handling",
+    title: "User",
     description:
       "Custom trained on your business data, the AI bots gather and store accurate user information.",
   },
