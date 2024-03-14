@@ -16,7 +16,7 @@ const Hero = () => {
           {/* <LampDemo /> */}
           <div className="space-y-5 max-w-4xl mx-auto text-center">
             <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
-              Lumiora: Simplifying Automation for You
+              Legally
             </h1>
             <p className="max-w-xl mx-auto">
               Lumiora offers intuitive automation solutions tailored to your needs.
