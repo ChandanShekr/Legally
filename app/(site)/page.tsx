@@ -15,6 +15,7 @@ import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
 import { LampDemo } from "@/components/ui/lamp";
 import { Feature } from "@/components/Features";
+import DashboardPage from "./dashboard";
 export const metadata: Metadata = {
   title: "Transform Your Business with Lumiora's Automation Solutions",
   description: "Discover Lumiora's cutting-edge automation services. From custom chat bots to zero-latency call handling, elevate your productivity today.",
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <main>
       <LampDemo />
+      <DashboardPage />
       {/* <Hero /> */}
       {/* <Brands /> */}
       <div className="lato"> 

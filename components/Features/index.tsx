@@ -16,24 +16,15 @@ export const automationServices = [
       "Custom trained on your business data, the AI bots gather and store accurate user information.",
   },
   {
-    title: "Tailored Solutions",
+    title: "Advocate",
     description:
-      "The bots are designed specifically according to your business needs, making them unique to your call handling requirements.",
+      "Join the cause, Advocate engagement amplifies our mission to democratize legal assistance.",
   },
   {
-    title: "Superior Customer Service",
+    title: "Upload Papers",
     description:
-      "The AI bots answer calls promptly and book appointments seamlessly, increasing the overall customer satisfaction.",
+      "Access expert help, Upload your case papers to connect with a skilled lawyer today, trust us we will keep your documents securely.",
   },
-  {
-    title: "Cost Efficiency",
-    description:
-      "By handling the call management, the AI bots reduce the need for a larger in-house team and save costs.",
-  },
-  {
-    title: "Increased Productivity",
-    description:
-      "As the bots efficiently handle calls, your staff can focus on other important tasks, resulting in increased productivity.",
-  },
+  
  
 ];
