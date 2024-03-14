@@ -115,7 +115,7 @@ const Contact = () => {
                       htmlFor="default-checkbox"
                       className="flex max-w-[425px] cursor-pointer select-none pl-5"
                     >
-                      By clicking Checkbox, you agree to get contacted by us for product related updates.
+                      By clicking Checkbox, you agree to get contacted by us for further communication.
                     </label>
                   </div>
 

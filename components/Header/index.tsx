@@ -38,7 +38,7 @@ const Header = () => {
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
-            <h1 className="text-3xl text-white font-semibold">Lumiora</h1>
+            <h1 className="text-3xl text-white font-semibold">Legally</h1>
           </a>
 
           {/* <!-- Hamburger Toggle BTN --> */}
